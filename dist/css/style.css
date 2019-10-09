@@ -49,10 +49,7 @@ body {
 }
 
 
-/* 
-#EE82EE
-#9932CC
-*/
+
 .main__section-background {
     background-image: linear-gradient(to right top, rgba(255, 0, 255, 0.8), rgba(76, 0, 130, 0.8)), url(../img/rain-1.jpg);
     background-size: cover;
@@ -291,4 +288,3 @@ body {
         transform: rotate(360deg);
     }
 }
-
