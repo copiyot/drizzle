@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900|Playball&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous" />
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+
+
+  <title>Weather App</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar__block">
+      <div class="navbar__source">
+        drizzle
+      </div>
+    </div>
+    <div class="navbar__block">
+      <div class="navbar__title">
+        Weather Website
+      </div>
+      <div class="navbar__author">
+        by Castro Opiyo
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+    <div class="main__section-background">
+      <div class="main__section">
+        <div class="main__section-region">
+          <div class="main__section-region1">
+
+          </div>
+          <!-- <div class="col-1-of-5">
+            <div class="city__image-shape">
+              <img src="./img/madrid.jpg" alt="Madrid city" class="city__image" />
+            </div>
+
+            <div class="search__text">
+              <div class="search__city-alternate">
+                Madrid
+              </div>
+              <div class="search__weather-alternate">
+                Sunny
+              </div>
+              <div class="search__temp-alternate">
+                32&deg;c
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="city__image-shape">
+              <img src="./img/london.jpg" alt="London city" class="city__image" />
+            </div>
+
+            <div class="search__text">
+              <div class="search__city-alternate">
+                London
+              </div>
+              <div class="search__weather-alternate">
+                Sunny
+              </div>
+              <div class="search__temp-alternate">
+                30&deg;c
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="city__image-shape">
+              <img src="./img/paris.jpg" alt="Paris city" class="city__image" />
+            </div>
+
+            <div class="search__text">
+              <div class="search__city-alternate">
+                Paris
+              </div>
+              <div class="search__weather-alternate">
+                Sunny
+              </div>
+              <div class="search__temp-alternate">
+                31&deg;c
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="city__image-shape">
+              <img src="./img/rome.jpg" alt="Rome city" class="city__image" />
+            </div>
+
+            <div class="search__text">
+              <div class="search__city-alternate">
+                Rome
+              </div>
+              <div class="search__weather-alternate">
+                Sunset
+              </div>
+              <div class="search__temp-alternate">
+                27&deg;c
+              </div>
+            </div>
+          </div>
+          <div class="col-1-of-5">
+            <div class="city__image-shape">
+              <img src="./img/moscow.jpg" alt="Madrid city" class="city__image" />
+            </div>
+
+            <div class="search__text">
+              <div class="search__city-alternate">
+                Moscow
+              </div>
+              <div class="search__weather-alternate">
+                Cloudy
+              </div>
+              <div class="search__temp-alternate">
+                28&deg;c
+              </div>
+            </div>
+          </div> -->
+          <div class="main__section-search">
+            <form action="submit" class="main__section-form">
+              <label>Region</label>
+              <select id="search__region-option" name="option">
+                <option value="Europe" selected="selected">Europe</option>
+                <option value="Africa">Africa</option>
+                <option value="North America">North America</option>
+                <option value="South America">South America</option>
+                <option value="Asia">Asia</option>
+              </select>
+              <input type="text" placeholder="Search" class="search__city" />
+            </form>
+          </div>
+        </div>
+
+        <div class="main__section-results">
+          <div class="results__week col-1-of-4">
+            <!-- <div class="results__week-city">
+              Paris, France
+            </div>
+
+            <div class="results__week-time">09:30 am</div>
+
+            <div class="results__week-date">30 May</div>
+
+            <div class="results__week-day">Thursday</div>
+
+            <div class="results__week-icon">
+              <i class="fas fa-sun fa-5x"></i>
+            </div>
+
+            <div class="results__week-temp">31&deg;c</div>
+
+            <div class="results__week-nextday">
+              <span class="results__week-day">Friday</span>
+              33 26 <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="results__week-nextday">
+              <span class="results__week-day">Saturday</span>
+              34 28 <i class="fas fa-cloud"></i>
+            </div>
+            <div class="results__week-nextday">
+              <span class="results__week-day">Sunday</span>
+              34 28 <i class="fas fa-cloud-showers-heavy"></i>
+            </div>
+            <div class="results__week-nextday">
+              <span class="results__week-day">Monday</span>
+              34 28 <i class="fas fa-cloud-showers-heavy"></i>
+            </div>
+
+            <span class="results__weel-arrow">&larr;</span> -->
+          </div>
+          <div class="results__today col-3-of-4">
+            <div class="results__today1">
+              <div id="container" style="width: 100%; height: 400px; margin: 0 auto;">
+              </div>
+            </div>
+            <!-- <div id="container" style="width: 100%; height: 400px; margin: 0 auto;"></div>
+            <script language="JavaScript">
+              $(document).ready(function () {
+                var title = {
+                  text: "Evolutive Weather Forecast"
+                };
+                var subtitle = {
+                  text: "Powered by Metaweather"
+                };
+                var xAxis = {
+                  categories: [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday"
+                  ]
+                };
+                var yAxis = {
+                  title: {
+                    text: " "
+                  },
+                  plotLines: [{
+                    value: 0,
+                    width: 1,
+                    color: "#808080"
+                  }]
+                };
+
+                var tooltip = {
+                  valueSuffix: "\xB0C"
+                };
+                var legend = {
+                  layout: "vertical",
+                  align: "right",
+                  verticalAlign: "middle",
+                  borderWidth: 0
+                };
+                var series = [{
+                    name: "Humidity",
+                    data: [
+                      80,
+                      89,
+                      73,
+                      65,
+                      58,
+                      55
+                    ]
+                  },
+                  {
+                    name: "Wind-Speed",
+                    data: [
+                      6,
+                      6,
+                      4,
+                      5,
+                      5,
+                      4
+                    ]
+                  },
+                  {
+                    name: "Temp",
+                    data: [
+                      26,
+                      21,
+                      25,
+                      29,
+                      30,
+                      34
+                    ]
+                  }
+                ];
+
+                var json = {};
+                json.title = title;
+                json.subtitle = subtitle;
+                json.xAxis = xAxis;
+                json.yAxis = yAxis;
+                json.tooltip = tooltip;
+                json.legend = legend;
+                json.series = series;
+
+                $("#container").highcharts(json);
+              });
+            </script> -->
+
+            <div class="results__today-about">
+              Drizzle is weather application that gives weather forecast for 5
+              days obtained from a real API. It also gives a 15 day evolution
+              of weather in a graphical form.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer__left">
+      ©2019 copiyot.com view on Github
+    </div>
+    <div class="footer__right">
+      Powered by Metaweather
+    </div>
+  </div>
+</body>
+
+</html>

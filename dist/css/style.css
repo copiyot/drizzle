@@ -1,0 +1,294 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.navbar {
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar__block {
+    display: inline-block;
+    margin: 0 5px;
+    text-align: center;
+}
+
+.navbar__source {
+    font-family: "Playball", sans-serif;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-right: .5px solid #777;
+    height: 60%;
+}
+
+.navbar__title {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.navbar__author {
+    font-family: "lato", sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    float: left;
+}
+
+
+/* 
+#EE82EE
+#9932CC
+*/
+.main__section-background {
+    background-image: linear-gradient(to right top, rgba(255, 0, 255, 0.8), rgba(76, 0, 130, 0.8)), url(../img/rain-1.jpg);
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    padding: 70px;
+}
+
+.main__section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    z-index: 50;
+}
+
+.main__section-region {
+    width: 100%;
+    margin: 0;
+    padding: 40px 0;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, rgba(240, 128, 128, 0.8), rgba(220, 20, 60, 0.9)), url(../img/paris-travel-guide.jpg);
+    background-size: cover;
+
+}
+
+.col-1-of-5 {
+    float: left;
+    width: calc(100%/5);
+
+}
+
+.city__image-shape {
+    width: 80px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.city__image {
+    height: 100px;
+    width: 100px;
+}
+
+
+.search__text {
+    padding-top: 30px;
+}
+
+.search__city-alternate {
+    font-family: "lato", sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+.search__weather-alternate {
+    font-family: "lato", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #FFFF00;
+}
+
+.search__temp-alternate {
+    font-family: "lato", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.main__section-search {
+    text-align: center;
+    opacity: .7;
+    margin-top: 10px;
+}
+
+.main__section-region1 {
+    overflow: hidden;
+}
+
+.main__section-form {
+    font-family: "lato", sans-serif;
+    font-size: 23px;
+    font-weight: 300;
+}
+
+#search__region-option {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 3px;
+    width: 200px;
+    margin-left: 10px;
+    background-color: rgba(178, 34, 34, 0.7);
+    color: #ffffff;
+}
+
+.search__city {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 3px;
+    width: 200px;
+    margin-left: 20px;
+    background-color: rgba(178, 34, 34, 0.7);
+}
+
+::placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
+.main__section-results {
+    overflow: hidden;
+}
+
+.col-1-of-4 {
+    width: calc(100%/3);
+    float: left;
+    height: 100%;
+}
+
+.col-3-of-4 {
+    width: calc(2*(100%/3));
+    float: left;
+    height: 100%;
+}
+
+.results__week {
+    text-align: center;
+    padding-top: 30px;
+    line-height: 1.5;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(139, 0, 0, 0.8)), url(../img/paris1.jpg);
+    background-size: cover;
+    padding: 30px;
+}
+
+.results__week-city {
+    font-family: "lato", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.results__week-time {
+    font-family: "lato", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.results__week-date {
+    font-family: "lato", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.results__week-day {
+    font-family: "lato", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgba(220, 20, 60);
+}
+
+.results__week-temp {
+    font-family: "lato", sans-serif;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.results__week-nextday {
+    font-size: 20px;
+}
+
+.results__weather-text {
+    font-size: 20px;
+    float: right;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.results__week-icon {
+    padding: 20px;
+}
+
+.results__weel-arrow {
+    float: right;
+    font-size: 40px;
+    color: #FFFF00;
+}
+
+.results__today-about {
+    height: 185px;
+    font-family: "lato", sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(139, 0, 0, 0.8));
+}
+
+.footer {
+    background-color: #333;
+    font-family: "lato", sans-serif;
+    padding: 40px;
+    font-weight: 200;
+    overflow: hidden;
+}
+
+.footer__left {
+    float: left;
+}
+
+.footer__right {
+    float: right;
+}
+
+.loader {
+    margin: 5rem auto;
+    text-align: center;
+    /* min-height: 58.4vh; */
+}
+
+.loader svg {
+    height: 5.5rem;
+    width: 5.5rem;
+    fill: rgba(178, 34, 34, 0.7);
+    transform-origin: 44% 50%;
+    animation: rotate 1.5s infinite linear;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
