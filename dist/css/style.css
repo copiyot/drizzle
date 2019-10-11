@@ -361,6 +361,224 @@ body {
     }
 }
 
-@media(max-width:1200px){
-    
+#container {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+@media (max-width:1200px) {
+
+    .navbar__source,
+    .navbar__title,
+    .navbar__author {
+        font-size: 90%;
+    }
+
+    .search__city-alternate,
+    .search__temp-alternate,
+    .search__weather-alternate {
+        font-size: 90%;
+    }
+
+    .city__image-shape {
+        height: 90px;
+        width: 70px;
+        margin: 10px;
+    }
+
+    .city__image {
+        height: 90px;
+        width: 90px;
+    }
+
+    .main__section-form {
+        font-size: 90%;
+    }
+
+    #search__region-option,
+    .search__city {
+        font-size: 90%;
+        padding: 2px;
+    }
+
+    .results__week-city,
+    .results__week-time,
+    .results__week-date,
+    .results__week-day,
+    .results__week-temp,
+    .results__week-nextday,
+    .results__week-temp,
+    .results__week-icon,
+    .results__weel-arrow {
+        font-size: 90%;
+    }
+
+    .results__weather-text {
+        font-size: 90%;
+        padding-top: 10px;
+    }
+
+    #container {
+        height: 300px;
+    }
+
+    .results__today-about {
+        height: 102px;
+        font-size: 90%;
+        padding: 26px;
+    }
+
+    .footer {
+        padding: 30px;
+    }
+
+}
+
+
+@media (max-width:900px) {
+
+    .navbar__source,
+    .navbar__title,
+    .navbar__author {
+        font-size: 80%;
+    }
+
+    .search__city-alternate,
+    .search__temp-alternate,
+    .search__weather-alternate {
+        font-size: 70%;
+    }
+
+    .city__image-shape {
+        height: 70px;
+        width: 50px;
+        margin: 2px;
+    }
+
+    .city__image {
+        height: 70px;
+        width: 70px;
+    }
+
+    .main__section-form {
+        font-size: 80%;
+    }
+
+    #search__region-option,
+    .search__city {
+        font-size: 80%;
+        padding: 2px;
+        width: 150px;
+    }
+
+    .results__week-city,
+    .results__week-time,
+    .results__week-date,
+    .results__week-day,
+    .results__week-temp,
+    .results__week-nextday,
+    .results__week-temp,
+    .results__week-icon,
+    .results__weel-arrow {
+        font-size: 80%;
+    }
+
+    .results__weather-text {
+        font-size: 80%;
+        padding-top: 10px;
+    }
+
+    #container {
+        height: 284px;
+    }
+
+    .results__today-about {
+        height: 90px;
+        font-size: 80%;
+        padding: 23px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .main__section-region {
+        padding: 30px 0;
+    }
+
+}
+
+@media(max-width: 768px) {
+    .main__section-background {
+        padding: 0px;
+    }
+
+    .search__city-alternate,
+    .search__temp-alternate,
+    .search__weather-alternate {
+        font-size: 80%;
+    }
+
+    .city__image-shape {
+        height: 60px;
+        width: 40px;
+        margin: 2px;
+    }
+
+    .city__image {
+        height: 60px;
+        width: 60px;
+    }
+
+    .main__section-form {
+        font-size: 80%;
+    }
+
+    #search__region-option,
+    .search__city {
+        font-size: 80%;
+        padding: 2px;
+        width: 150px;
+    }
+
+    .results__week-city,
+    .results__week-time,
+    .results__week-date,
+    .results__week-day,
+    .results__week-temp,
+    .results__week-nextday,
+    .results__week-temp,
+    .results__week-icon,
+    .results__weel-arrow {
+        font-size: 80%;
+    }
+
+    .results__weather-text {
+        font-size: 80%;
+        padding-top: 10px;
+    }
+
+    #container {
+        height: 284px;
+    }
+
+    .results__today-about {
+        height: 90px;
+        font-size: 80%;
+        padding: 23px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
+
+    .results__week {
+        padding-right: 10px;
+        padding-right: 10px;
+    }
+
+    .main__section-region {
+        padding: 20px 0;
+    }
 }
