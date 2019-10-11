@@ -122,11 +122,15 @@ const onloadController = async () => {
   await state.search.getWeather();
   await state.region.getRegion();
 
-  //3.) Render Weather and Cities
+  //3.) Clear spinner
+  const spinner = document.getElementById("overlay");
+  spinner.parentElement.removeChild(spinner);
+
+  //4.) Render Weather and Cities
   searchView.renderWeather(state.search.weather);
   regionView.renderCities(state.region.regionArr);
 
-  //4.) Render Graph
+  //5.) Render Graph
   graphView.renderGraph(state.search.weather);
 };
 

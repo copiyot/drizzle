@@ -4,7 +4,8 @@ export const selectors = {
   searchWeatherList: document.querySelector(".results__week"),
   searchRegion: document.getElementById("search__region-option"),
   searchCities: document.querySelector(".main__section-region1"),
-  searchGraph: document.querySelector("#container")
+  searchGraph: document.querySelector("#container"),
+  seachLoading: document.querySelector(".loading")
 };
 
 // export const elementString = () => {
@@ -20,7 +21,7 @@ export const renderLoader = parent => {
   </div>
   `;
 
-  parent.insertAdjacentHTML("afterbegin", loader);
+  parent.insertAdjacentHTML("beforeend", loader);
 };
 
 export const clearLoader = () => {
